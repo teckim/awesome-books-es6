@@ -1,10 +1,8 @@
 const booksListEl = document.querySelector('.books-list');
 
-function uid() {
-  return Math.floor((1 + Math.random()) * 0x10000)
-    .toString(16)
-    .substring(1);
-}
+const uid = () => Math.floor((1 + Math.random()) * 0x10000)
+  .toString(16)
+  .substring(1);
 
 export default class Books {
   books = [];
