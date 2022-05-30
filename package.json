@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx hint . && npx stylelint \"**/*.{css,scss}\" && npx eslint .",
     "deploy:gh-pages": "git subtree push --prefix src origin gh-pages"
   },
   "keywords": [],
